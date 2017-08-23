@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Main Page"
              x:Class="Silencio.Views.InstrumentPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Log Out" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout Margin="0,50,0,30" >
             <Button Clicked="Guitar_Clicked" BackgroundColor="Transparent" Image="Logo_Guitar.png" />

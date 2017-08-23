@@ -40,5 +40,11 @@ namespace Silencio.Views
                 Instrument = "Drummer"
             });
         }
+
+        private void ToolbarItem_Clicked(object sender, EventArgs e)
+        {
+            Settings.UserId = null;
+            App.Current.MainPage = new NavigationPage(new SignInPage());
+        }
     }
 }

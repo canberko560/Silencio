@@ -46,17 +46,17 @@ namespace Silencio.Views
                     }
                     else
                     {
-                        //TODO: Insert Error Alert
+                        await DisplayAlert("Error", "access denied", "Cancel");  //TODO: Insert Error Alert
                     }
                 }
                 else
                 {
-                    //TODO: Exists User Error
+                    await DisplayAlert("Error", "User exists", "Try Again"); //TODO: Exists User Error
                 }
             }
             else
             {
-                //TODO: Validation Error Alert
+                await DisplayAlert("Error", "Validation Error", "Cancel"); //TODO: Validation Error Alert
             }
         }
     }
