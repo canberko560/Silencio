@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Silencio.Views.SignUpPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20,40,20,10">
+            
+            <Entry x:Name="SignUp_Email" Placeholder="E-mail"></Entry>
+            <Entry x:Name="SignUp_Password" Placeholder="Password" IsPassword="True"></Entry>
+            <Entry x:Name="SignUp_PassConfirm" Placeholder="Confirm Password" IsPassword="True"></Entry>
+            <Entry x:Name="SignUp_Name" Placeholder="Your Name"></Entry>
+            <Entry x:Name="SignUp_Surname" Placeholder="Your Surname"></Entry>
+            <Entry x:Name="SignUp_Phone" Placeholder="Phone"></Entry>
+            <Entry x:Name="SignUp_Location" Placeholder="Location"></Entry>
+            <Picker x:Name="SignUp_Instrument">
+                <Picker.Items>
+                    <x:String>Guitarist</x:String>
+                    <x:String>Vocalist</x:String>
+                    <x:String>Drummer</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Button Text="SignUp" HorizontalOptions="CenterAndExpand" VerticalOptions="End" Clicked="SignUpClicked" ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
